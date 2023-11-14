@@ -1,13 +1,17 @@
 
 let container = document.getElementById("container")
 
-container.innerHTML = `
-<div class="card">
-<div class="top">
+for (let i = 0; i < 50; i++) {
+    let card = 
+    `
+    <div class="card">
+        <div class="top">
 
-</div>
-<div class="botton">
+        </div>
+        <div class="botton">
 
-</div>
-</div>
-`
+        </div>
+    </div>
+    `
+    container.innerHTML += card
+}
