@@ -66,8 +66,6 @@ body {
 }
 
 #username:hover, #password:hover{
-    padding-left: 2mm;
-    font-size: 14pt;
     opacity: 100%;
     border: 1px solid rgb(240, 108, 13);
 }
