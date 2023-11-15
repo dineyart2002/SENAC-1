@@ -1,17 +1,56 @@
 
 let container = document.getElementById("container")
 
-for (let i = 0; i < 50; i++) {
-    let card = 
-    `
-    <div class="card">
-        <div class="top">
+let fragment = document.createDocumentFragment()
 
-        </div>
-        <div class="botton">
+let card = document.createElement('div')
+card.setAttribute('class', 'card')
 
-        </div>
-    </div>
-    `
-    container.innerHTML += card
-}
+let div_img = document.createElement('div')
+div_img.setAttribute('class', 'div-img')
+
+card.append(div_img)
+
+let div_chef = document.createElement('div')
+div_chef.setAttribute('class', 'chef-avatar')
+
+card.append(div_chef)
+
+
+fragment.append(card)
+
+
+
+
+
+
+
+container.append(fragment)
+
+
+
+
+
+
+
+
+
+
+
+// Exemplo com innerHTML (não usar)
+// let texto = "Índice :"
+// for (let i = 0; i < 50; i++) {
+//     let card = 
+//     `
+//     <div class="card">
+//         <div class="top">
+//         ${texto+i}
+//         </div>
+//         <div class="botton">
+
+//         </div>
+//     </div>
+//     `
+//     container.innerHTML += card
+// } 
+
